@@ -1,4 +1,4 @@
-"""AeroDataBox schedules and status only; never passenger manifests or bookable inventory. Mirrors LiveFlights.java.
+"""AeroDataBox schedules and status only; never passenger manifests or bookable inventory.
 OTP departures, two 12h departure windows, refreshed every ten minutes; keeps the last good snapshot on errors."""
 from __future__ import annotations
 

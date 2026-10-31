@@ -1,4 +1,4 @@
-"""Same assertions as the Java tests. Run: python -m unittest discover -s tests"""
+"""Rule tests. Run: python -m unittest discover -s tests"""
 import json
 import os
 import unittest

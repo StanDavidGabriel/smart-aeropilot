@@ -1,6 +1,6 @@
 # AeroPilot Reroute Engine — Python (standard library only)
 
-A Python port of `java/reroute-engine` with the **same endpoints, rules and JSON**, so a frontend can use either one.
+The whole AeroPilot backend in one Python service — live flights, rerouting, simulated cancellations, fares, vouchers and passenger messages.
 Needs Python 3.10+; nothing to install.
 
 ## Run
@@ -22,9 +22,9 @@ Without a key, everything works except `/api/reroute/live-flights` (503) and can
 Refreshes on startup and every ten minutes (two 12-hour OTP departure windows), keeping the last good snapshot on errors.
 
 `LOVABLE_API_KEY` also enables AI-written passenger messages; otherwise a fixed template is used.
-Simulation state is saved to `simulation-state.json` (`REROUTE_SIMULATION_FILE=` empty keeps it in memory). The file format matches the Java one.
+Simulation state is saved to `simulation-state.json` (`REROUTE_SIMULATION_FILE=` empty keeps it in memory).
 
-## API (identical to Java; `health` reports `"engine":"python"`)
+## API (`health` reports `"engine":"python"`)
 - `GET  /api/reroute/health`, `GET /api/reroute/network`
 - `GET  /api/reroute/live-flights?search=&airport=&page=`
 - `POST /api/reroute/recommendations` / `POST /api/reroute/support` `{ flight, candidates, excluded }`
@@ -35,7 +35,7 @@ Simulation state is saved to `simulation-state.json` (`REROUTE_SIMULATION_FILE=`
 - `POST /api/reroute/notifications/ack` `{"id"}`, `POST /api/reroute/notifications/clear`
 - `POST /api/reroute/message` `{ cancelled, result }`
 
-See `java/reroute-engine/README.md` for the full rules (eligibility, fares, USD 25/50 vouchers after 8/12 hours). Demo amounts are never bookings, redeemable vouchers or statutory compensation.
+Rules: only eligible future departures (known hubs, open status, within 24 hours) qualify; fares are distance-based demo estimates; goodwill vouchers of USD 25/50 apply after 8/12 hours of disruption with no route. Demo amounts are never bookings, redeemable vouchers or statutory compensation.
 
 ## Layout
 - `reroute/core.py` — time parsing, hub codes, departure eligibility

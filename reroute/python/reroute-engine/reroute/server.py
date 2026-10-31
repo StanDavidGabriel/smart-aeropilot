@@ -1,4 +1,4 @@
-"""HTTP API (standard library only). Same endpoints and JSON as the Java RerouteServer.
+"""HTTP API (standard library only).
 Usage: python -m reroute.server [path/to/network.json] [port]"""
 from __future__ import annotations
 

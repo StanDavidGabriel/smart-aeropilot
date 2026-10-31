@@ -1,4 +1,4 @@
-"""Shared helpers: time parsing, hub codes, live-flight eligibility. Mirrors LiveFlights.eligible / hubCode in Java."""
+"""Shared helpers: time parsing, hub codes, live-flight eligibility."""
 from __future__ import annotations
 
 import math
@@ -22,7 +22,7 @@ def hub_code(code) -> str:
 
 
 def parse_instant(value) -> datetime | None:
-    """Strict ISO-8601 UTC instant (like java.time.Instant.parse); None when invalid."""
+    """Strict ISO-8601 UTC instant; None when invalid."""
     if not isinstance(value, str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{1,9})?Z", value):
         return None
     base, _, frac = value[:-1].partition(".")
@@ -47,8 +47,7 @@ def epoch_ms(dt: datetime) -> int:
     return int(dt.timestamp() * 1000)
 
 
-def java_round(x: float) -> int:
-    """Math.round: half up."""
+def round_half_up(x: float) -> int:
     return math.floor(x + 0.5)
 
 

@@ -1,1 +1,1 @@
-"""AeroPilot reroute engine — Python port of java/reroute-engine (standard library only)."""
+"""AeroPilot reroute engine — Python, standard library only."""

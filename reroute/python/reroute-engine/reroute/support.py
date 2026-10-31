@@ -1,10 +1,10 @@
-"""Demo fares and non-redeemable goodwill vouchers. Mirrors SupportPolicy.java."""
+"""Demo fares and non-redeemable goodwill vouchers."""
 from __future__ import annotations
 
 import math
 from datetime import datetime, timedelta
 
-from .core import epoch_ms, hub_code, java_round, parse_instant
+from .core import epoch_ms, hub_code, parse_instant, round_half_up
 
 POINTS = {
     "LHR": (51.47, -0.4543), "LGW": (51.1537, -0.1821), "CDG": (49.0097, 2.5479), "ORY": (48.7262, 2.3652),
@@ -29,7 +29,7 @@ def estimate(legs: list[dict]) -> dict:
         h = math.sin(math.radians(b[0] - a[0]) / 2) ** 2 + math.cos(math.radians(a[0])) * math.cos(math.radians(b[0])) * math.sin(math.radians(b[1] - a[1]) / 2) ** 2
         km = 6371 * 2 * math.atan2(math.sqrt(h), math.sqrt(max(0.0, 1 - h)))
         base += 40 + km * 0.10
-    return {"low": java_round(base * 0.8), "high": java_round(base * 1.4), "currency": "USD"}
+    return {"low": round_half_up(base * 0.8), "high": round_half_up(base * 1.4), "currency": "USD"}
 
 
 def voucher(flight: dict, alternative_count: int, now: datetime) -> dict:

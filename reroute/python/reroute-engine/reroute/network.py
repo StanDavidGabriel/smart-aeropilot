@@ -1,5 +1,5 @@
 """Sample-network model, time-dependent Dijkstra and passenger priority/voucher rules.
-Mirrors Model.java, Router.java and RerouteEngine.java. Times are minutes after midnight."""
+Times are minutes after midnight."""
 from __future__ import annotations
 
 import heapq

@@ -1,5 +1,5 @@
 """Server-side cancellation simulation. Synthetic recipients only; never changes real flights, bookings or vouchers.
-Mirrors Simulation.java and keeps the same JSON field names, so state files are interchangeable."""
+Keeps stable JSON field names so saved state files stay compatible."""
 from __future__ import annotations
 
 import json

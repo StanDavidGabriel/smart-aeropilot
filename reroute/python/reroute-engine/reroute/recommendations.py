@@ -1,4 +1,4 @@
-"""Schedule suggestions, never bookings. Mirrors ScheduleRecommendations.java."""
+"""Schedule suggestions, never bookings."""
 from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
