@@ -1,0 +1,272 @@
+[
+  {
+    "icao": "LROP",
+    "iata": "OTP",
+    "name": "Henri Coandă International",
+    "city": "Bucharest"
+  },
+  {
+    "icao": "LRCV",
+    "iata": "CRA",
+    "name": "Craiova International",
+    "city": "Craiova"
+  },
+  {
+    "icao": "LRTR",
+    "iata": "TSR",
+    "name": "Traian Vuia International",
+    "city": "Timișoara"
+  },
+  {
+    "icao": "LRCL",
+    "iata": "CLJ",
+    "name": "Avram Iancu International",
+    "city": "Cluj-Napoca"
+  },
+  {
+    "icao": "LRIA",
+    "iata": "IAS",
+    "name": "Iași International",
+    "city": "Iași"
+  },
+  {
+    "icao": "LRSB",
+    "iata": "SBZ",
+    "name": "Sibiu International",
+    "city": "Sibiu"
+  },
+  {
+    "icao": "LRBC",
+    "iata": "BCM",
+    "name": "George Enescu International",
+    "city": "Bacău"
+  },
+  {
+    "icao": "LRSV",
+    "iata": "SCV",
+    "name": "Ștefan cel Mare International",
+    "city": "Suceava"
+  },
+  {
+    "icao": "LROD",
+    "iata": "OMR",
+    "name": "Oradea International",
+    "city": "Oradea"
+  },
+  {
+    "icao": "LRTC",
+    "iata": "TCE",
+    "name": "Tulcea Danube Delta",
+    "city": "Tulcea"
+  },
+  {
+    "icao": "LRCK",
+    "iata": "CND",
+    "name": "Mihail Kogălniceanu International",
+    "city": "Constanța"
+  },
+  {
+    "icao": "LRSM",
+    "iata": "SUJ",
+    "name": "Satu Mare International",
+    "city": "Satu Mare"
+  },
+  {
+    "icao": "LRTM",
+    "iata": "TGM",
+    "name": "Transilvania International",
+    "city": "Târgu Mureș"
+  },
+  {
+    "icao": "LRBV",
+    "iata": "GHV",
+    "name": "Brașov-Ghimbav International",
+    "city": "Brașov"
+  },
+  {
+    "icao": "LRAR",
+    "iata": "ARW",
+    "name": "Arad International",
+    "city": "Arad"
+  },
+  {
+    "icao": "EDDM",
+    "iata": "MUC",
+    "name": "Munich Airport",
+    "city": "Munich"
+  },
+  {
+    "icao": "LOWW",
+    "iata": "VIE",
+    "name": "Vienna International",
+    "city": "Vienna"
+  },
+  {
+    "icao": "LFPG",
+    "iata": "CDG",
+    "name": "Charles de Gaulle",
+    "city": "Paris"
+  },
+  {
+    "icao": "LFOB",
+    "iata": "BVA",
+    "name": "Beauvais-Tillé",
+    "city": "Paris"
+  },
+  {
+    "icao": "LFMN",
+    "iata": "NCE",
+    "name": "Côte d'Azur",
+    "city": "Nice"
+  },
+  {
+    "icao": "LIRF",
+    "iata": "FCO",
+    "name": "Rome Fiumicino",
+    "city": "Rome"
+  },
+  {
+    "icao": "LIRA",
+    "iata": "CIA",
+    "name": "Rome Ciampino",
+    "city": "Rome"
+  },
+  {
+    "icao": "LIME",
+    "iata": "BGY",
+    "name": "Milan Bergamo",
+    "city": "Milan"
+  },
+  {
+    "icao": "LIMC",
+    "iata": "MXP",
+    "name": "Milan Malpensa",
+    "city": "Milan"
+  },
+  {
+    "icao": "LIPZ",
+    "iata": "VCE",
+    "name": "Venice Marco Polo",
+    "city": "Venice"
+  },
+  {
+    "icao": "LIPQ",
+    "iata": "TRS",
+    "name": "Trieste – Friuli Venezia Giulia",
+    "city": "Trieste"
+  },
+  {
+    "icao": "LIPE",
+    "iata": "BLQ",
+    "name": "Bologna Guglielmo Marconi",
+    "city": "Bologna"
+  },
+  {
+    "icao": "LEMD",
+    "iata": "MAD",
+    "name": "Adolfo Suárez Madrid–Barajas",
+    "city": "Madrid"
+  },
+  {
+    "icao": "LEBL",
+    "iata": "BCN",
+    "name": "Josep Tarradellas Barcelona–El Prat",
+    "city": "Barcelona"
+  },
+  {
+    "icao": "LEMG",
+    "iata": "AGP",
+    "name": "Málaga-Costa del Sol",
+    "city": "Málaga"
+  },
+  {
+    "icao": "EDDF",
+    "iata": "FRA",
+    "name": "Frankfurt am Main",
+    "city": "Frankfurt"
+  },
+  {
+    "icao": "EDDL",
+    "iata": "DUS",
+    "name": "Düsseldorf",
+    "city": "Düsseldorf"
+  },
+  {
+    "icao": "EDLW",
+    "iata": "DTM",
+    "name": "Dortmund Airport",
+    "city": "Dortmund"
+  },
+  {
+    "icao": "EDDK",
+    "iata": "CGN",
+    "name": "Cologne Bonn",
+    "city": "Cologne"
+  },
+  {
+    "icao": "EDDN",
+    "iata": "NUE",
+    "name": "Nuremberg Airport",
+    "city": "Nuremberg"
+  },
+  {
+    "icao": "EGGW",
+    "iata": "LTN",
+    "name": "London Luton",
+    "city": "London"
+  },
+  {
+    "icao": "EGLL",
+    "iata": "LHR",
+    "name": "London Heathrow",
+    "city": "London"
+  },
+  {
+    "icao": "EGSS",
+    "iata": "STN",
+    "name": "London Stansted",
+    "city": "London"
+  },
+  {
+    "icao": "LGAV",
+    "iata": "ATH",
+    "name": "Athens International",
+    "city": "Athens"
+  },
+  {
+    "icao": "LTFM",
+    "iata": "IST",
+    "name": "Istanbul Airport",
+    "city": "Istanbul"
+  },
+  {
+    "icao": "LTFJ",
+    "iata": "SAW",
+    "name": "Sabiha Gökçen International",
+    "city": "Istanbul"
+  },
+  {
+    "icao": "EHEH",
+    "iata": "EIN",
+    "name": "Eindhoven Airport",
+    "city": "Eindhoven"
+  },
+  {
+    "icao": "EHAM",
+    "iata": "AMS",
+    "name": "Amsterdam Schiphol",
+    "city": "Amsterdam"
+  },
+  {
+    "icao": "EBCI",
+    "iata": "CRL",
+    "name": "Brussels South Charleroi",
+    "city": "Brussels"
+  },
+  {
+    "icao": "EBBR",
+    "iata": "BRU",
+    "name": "Brussels Airport",
+    "city": "Brussels"
+  }
+]

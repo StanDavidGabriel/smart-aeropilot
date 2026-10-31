@@ -1,0 +1,102 @@
+[
+  {
+    "id": "RO123",
+    "flightNo": "RO123",
+    "origin": "LROP",
+    "dest": "EDDM",
+    "std": "2026-10-31T06:40:00Z",
+    "inboundDelayMin": 0,
+    "congestion": 0.6,
+    "passengers": 37
+  },
+  {
+    "id": "RO301",
+    "flightNo": "RO301",
+    "origin": "LROP",
+    "dest": "LFPG",
+    "std": "2026-10-31T07:10:00Z",
+    "inboundDelayMin": 5,
+    "congestion": 0.5,
+    "passengers": 142
+  },
+  {
+    "id": "RO641",
+    "flightNo": "RO641",
+    "origin": "LRCV",
+    "dest": "LROP",
+    "std": "2026-10-31T07:25:00Z",
+    "inboundDelayMin": 0,
+    "congestion": 0.1,
+    "passengers": 48
+  },
+  {
+    "id": "LH1653",
+    "flightNo": "LH1653",
+    "origin": "EDDM",
+    "dest": "LROP",
+    "std": "2026-10-31T07:50:00Z",
+    "inboundDelayMin": 10,
+    "congestion": 0.55,
+    "passengers": 156
+  },
+  {
+    "id": "W64321",
+    "flightNo": "W6 4321",
+    "origin": "LRTR",
+    "dest": "LIRF",
+    "std": "2026-10-31T08:05:00Z",
+    "inboundDelayMin": 0,
+    "congestion": 0.2,
+    "passengers": 180
+  },
+  {
+    "id": "RO711",
+    "flightNo": "RO711",
+    "origin": "LRTR",
+    "dest": "LROP",
+    "std": "2026-10-31T08:30:00Z",
+    "inboundDelayMin": 15,
+    "congestion": 0.15,
+    "passengers": 62
+  },
+  {
+    "id": "OS792",
+    "flightNo": "OS792",
+    "origin": "LOWW",
+    "dest": "LRCV",
+    "std": "2026-10-31T09:00:00Z",
+    "inboundDelayMin": 0,
+    "congestion": 0.4,
+    "passengers": 71
+  },
+  {
+    "id": "LH1675",
+    "flightNo": "LH1675",
+    "origin": "EDDM",
+    "dest": "LRTR",
+    "std": "2026-10-31T09:20:00Z",
+    "inboundDelayMin": 20,
+    "congestion": 0.6,
+    "passengers": 98
+  },
+  {
+    "id": "RO401",
+    "flightNo": "RO401",
+    "origin": "LROP",
+    "dest": "LOWW",
+    "std": "2026-10-31T10:15:00Z",
+    "inboundDelayMin": 0,
+    "congestion": 0.45,
+    "passengers": 88
+  },
+  {
+    "id": "FR2106",
+    "flightNo": "FR 2106",
+    "origin": "LROP",
+    "dest": "LIRF",
+    "std": "2026-10-31T11:00:00Z",
+    "inboundDelayMin": 0,
+    "congestion": 0.5,
+    "passengers": 189
+  }
+]
