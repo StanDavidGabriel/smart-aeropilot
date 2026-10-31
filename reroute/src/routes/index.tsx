@@ -1,12 +1,13 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AeroPilot — Python rerouting service" },
-      { name: "description", content: "AeroPilot now runs as a standalone Python service; the website will be rebuilt later." },
-      { property: "og:title", content: "AeroPilot — Python rerouting service" },
-      { property: "og:description", content: "Flight rerouting, simulated cancellations and passenger messages in Python." },
+      { title: "AeroPilot — Flight operations" },
+      { name: "description", content: "Smart AeroPilot: AeroDataBox flight schedules and passenger cancellation simulations." },
+      { property: "og:title", content: "AeroPilot — Flight operations" },
+      { property: "og:description", content: "Live flight operations and English passenger notifications." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -16,12 +17,13 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-4 px-4 text-center">
-      <p className="text-xs uppercase tracking-widest text-primary">Smart AeroPilot System</p>
-      <h1 className="max-w-2xl text-4xl font-bold">The website is being rebuilt</h1>
-      <p className="max-w-xl text-muted-foreground">
-        All flight logic now runs in the Python service at python/reroute-engine. Start it locally and use its API on port 8081.
-      </p>
+    <main className="flex min-h-screen flex-col items-center justify-center gap-6 px-4 text-center">
+      <p className="board text-xs uppercase text-primary">Smart AeroPilot System</p>
+      <h1 className="max-w-2xl text-5xl font-bold">AeroPilot flight operations</h1>
+      <div className="flex gap-3">
+        <Button asChild size="lg"><Link to="/ops/reroute">Operations console</Link></Button>
+        <Button asChild size="lg" variant="outline"><Link to="/passenger">Passenger inbox</Link></Button>
+      </div>
     </main>
   );
 }

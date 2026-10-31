@@ -1,5 +1,27 @@
 {
   "version": "7",
   "dialect": "postgresql",
-  "entries": []
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1793445103365,
+      "tag": "0000_reroute_live_aircraft_snapshots",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793448102760,
+      "tag": "0001_reroute_worldwide_collection",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793448735403,
+      "tag": "0002_european_upcoming_departures",
+      "breakpoints": true
+    }
+  ]
 }

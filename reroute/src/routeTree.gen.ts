@@ -10,33 +10,68 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PassengerRouteImport } from './routes/passenger'
+import { Route as OpsRerouteRouteImport } from './routes/ops.reroute'
+import { Route as ApiPublicRerouteRefreshRouteImport } from './routes/api/public/reroute/refresh'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PassengerRoute = PassengerRouteImport.update({
+  id: '/passenger',
+  path: '/passenger',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OpsRerouteRoute = OpsRerouteRouteImport.update({
+  id: '/ops/reroute',
+  path: '/ops/reroute',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicRerouteRefreshRoute = ApiPublicRerouteRefreshRouteImport.update({
+  id: '/api/public/reroute/refresh',
+  path: '/api/public/reroute/refresh',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/passenger': typeof PassengerRoute
+  '/ops/reroute': typeof OpsRerouteRoute
+  '/api/public/reroute/refresh': typeof ApiPublicRerouteRefreshRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/passenger': typeof PassengerRoute
+  '/ops/reroute': typeof OpsRerouteRoute
+  '/api/public/reroute/refresh': typeof ApiPublicRerouteRefreshRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/passenger': typeof PassengerRoute
+  '/ops/reroute': typeof OpsRerouteRoute
+  '/api/public/reroute/refresh': typeof ApiPublicRerouteRefreshRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/passenger' | '/ops/reroute' | '/api/public/reroute/refresh'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/passenger' | '/ops/reroute' | '/api/public/reroute/refresh'
+  id:
+    | '__root__'
+    | '/'
+    | '/passenger'
+    | '/ops/reroute'
+    | '/api/public/reroute/refresh'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  PassengerRoute: typeof PassengerRoute
+  OpsRerouteRoute: typeof OpsRerouteRoute
+  ApiPublicRerouteRefreshRoute: typeof ApiPublicRerouteRefreshRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +83,35 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/passenger': {
+      id: '/passenger'
+      path: '/passenger'
+      fullPath: '/passenger'
+      preLoaderRoute: typeof PassengerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ops/reroute': {
+      id: '/ops/reroute'
+      path: '/ops/reroute'
+      fullPath: '/ops/reroute'
+      preLoaderRoute: typeof OpsRerouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/reroute/refresh': {
+      id: '/api/public/reroute/refresh'
+      path: '/api/public/reroute/refresh'
+      fullPath: '/api/public/reroute/refresh'
+      preLoaderRoute: typeof ApiPublicRerouteRefreshRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  PassengerRoute: PassengerRoute,
+  OpsRerouteRoute: OpsRerouteRoute,
+  ApiPublicRerouteRefreshRoute: ApiPublicRerouteRefreshRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
