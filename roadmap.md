@@ -1,0 +1,20 @@
+# Roadmap
+- [x] Refresh and save 47 fresh OTP flights through the protected callback; share updater with an authenticated manual function and show honest signed-out reload feedback. Verified fresh UI readback, refresh/reload cancellation persistence and 42 tests, including provider-failure retention.
+- [ ] Verify signed-in manual AeroDataBox refresh through the button; blocked because this project has no auth users or sign-in flow. Signed-out refresh safely reloads saved data only.
+- [x] Research free fare quotes; add labelled distance-based fallback estimates and no-route demo vouchers (USD 25 after eight hours, USD 50 after twelve). Verified 39 tests, Java compilation/parity tests, real OTP–WAW cancellation → fare → passenger acknowledgement/reload, and real final OTP departure → no route → vouchers at eight/twelve hours with browser-clock advancement. No additional provider calls.
+- [x] Keep real OTP-only cancellations and add clearly labelled simulated European onward schedules after research found no verified suitable free 24-hour source. Verified real OTP–AMS and OTP–FRA legs combined with labelled simulated WAW connections in Ops and passenger inbox/reload, 31 tests and Java generator/selector tests. No extra provider calls.
+- [x] Restrict collection and list to OTP; connection selection requires two actually listed legs and valid transfer timing. Verified 47 OTP rows, real Warsaw recommendation and passenger reload, 29 tests and Java connection tests. OTP-only departures provide no onward legs, so current recommendations remain direct.
+- [x] Recommend later same-route scheduled flights in passenger inbox and Ops using all matching stored pages, Java selector and browser fallback; verified real OTP–WAW LO644 November 1 03:35 recommends LO640 06:20 (arrival 08:10), acknowledgement/reload, 27 tests and Java parity rules. Seats and bookings remain unconfirmed.
+- [x] Restrict schedules to 28 major European hubs and future departures within 24 hours; exclude actual departures and airborne/arrived/cancelled statuses across database, UI, simulation rules and Java. Verified 47 real departures, passenger cancellation/acknowledgement/restoration/reload, 24 tests, Java rule tests and desktop/mobile display.
+- [x] Prepare worldwide airport discovery (3,282 supported airports), paginated/searchable stored-flight board, airport-scoped snapshots and leased batch collection; verified passenger cancellation/acknowledgement/restoration, Java compilation and 21 tests.
+- [x] Retire multi-airport activation in favor of OTP-only collection as requested; legacy flags cannot enable extra airport calls.
+- [x] Replace OpenSky with AeroDataBox via a secure RapidAPI connection; verified Cloud snapshot, passenger cancellation/acknowledgement/restoration, Java real-flight normalization and 17 passing tests.
+- [x] Connect observed-flight cancellation/restoration to shared passenger simulations and verify navigation, reload and cross-tab delivery.
+- [x] Remove original Ops demo cancellation controls and translate all app and notification text to English.
+- [x] Verify no-login OpenSky observations; use Romania-area coverage within anonymous allowance.
+- [x] Store real snapshots and configure ten-minute background refresh; local Java also refreshes every ten minutes.
+- [x] Preserve independent simulated cancellations and existing Java demo rerouting.
+- [x] Verify authenticated snapshot refresh, database readback, UI cancellation/reload/restoration, Java endpoint and nine tests.
+- [x] Suggest further polish without implementing unsolicited features.
+- [ ] Verify a scheduled hosted callback after publishing; blocked on publication, which the user has not requested.
+- [ ] Full real scheduled-flight rerouting remains unavailable: AeroDataBox supplies schedules and status but not passenger manifests or bookable seat inventory.
