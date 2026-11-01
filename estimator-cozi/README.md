@@ -1,5 +1,25 @@
 # Estimator cozi la securitate — Python
 
+> Modul din [Smart AeroPilot](../README.md) — echipa **VEPA CPPU APV**
+
+## Descărcare (doar acest folder)
+
+**Varianta 1 — fără Git:** deschide
+https://download-directory.github.io/?url=https://github.com/StanDavidGabriel/smart-aeropilot/tree/main/estimator-cozi
+și se descarcă un ZIP doar cu folderul `estimator-cozi`. Dezarhivează-l.
+
+**Varianta 2 — cu Git (sparse checkout):**
+
+```sh
+git clone --filter=blob:none --sparse https://github.com/StanDavidGabriel/smart-aeropilot.git
+cd smart-aeropilot
+git sparse-checkout set estimator-cozi
+cd estimator-cozi
+```
+
+**Varianta 3 — tot repo-ul:** pe GitHub, **Code → Download ZIP**, apoi deschide folderul `estimator-cozi`.
+
+
 Aplicație locală, scrisă în Python. Interfața Streamlit se deschide în browser;
 nu trebuie să scrii sau să instalezi cod TypeScript. Necesită Python 3.11 sau 3.12.
 
