@@ -1,5 +1,25 @@
 # Craiova Airport Flight Risk — Python edition
 
+> Modul din [Smart AeroPilot](../README.md) — echipa **VEPA CPPU APV**
+
+## Descărcare (doar acest folder)
+
+**Varianta 1 — fără Git:** deschide
+https://download-directory.github.io/?url=https://github.com/StanDavidGabriel/smart-aeropilot/tree/main/predictor-intarziere
+și se descarcă un ZIP doar cu folderul `predictor-intarziere`. Dezarhivează-l.
+
+**Varianta 2 — cu Git (sparse checkout):**
+
+```sh
+git clone --filter=blob:none --sparse https://github.com/StanDavidGabriel/smart-aeropilot.git
+cd smart-aeropilot
+git sparse-checkout set predictor-intarziere
+cd predictor-intarziere
+```
+
+**Varianta 3 — tot repo-ul:** pe GitHub, **Code → Download ZIP**, apoi deschide folderul `predictor-intarziere`.
+
+
 A complete standalone Python/Streamlit dashboard. This is a separate runnable app,
 not a replacement for the Lovable-hosted React app. All custom application logic and
 UI definitions are Python; Streamlit supplies the browser interface. No Java, custom
