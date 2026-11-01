@@ -25,7 +25,7 @@ Smart AeroPilot este un set de trei instrumente pentru aeroporturi care reduc st
 |---|---|---|---|
 | [`estimator-cozi`](estimator-cozi/) | Python + Streamlit | Detectează persoane și bagaje (YOLOv8n) pe 3 benzi și estimează timpul de așteptare la securitate. Interfață RO/EN. | http://localhost:8501 |
 | [`predictor-intarziere`](predictor-intarziere/) | Python + Streamlit | Calculează riscul de întârziere/anulare pentru plecările din Craiova (CRA) și alte aeroporturi, din zboruri live (AeroDataBox) și vremea METAR (NOAA). | http://localhost:8501 |
-| [`reroute`](reroute/) | Java 17 + TypeScript/React | Când un zbor e anulat, găsește rute alternative (Dijkstra dependent de timp), aplică priorități și decide vouchere. Consolca operatională + vizualizare pasager. | site: http://localhost:8080 · motor: http://localhost:8081 |
+| [`reroute`](reroute/) | Java 17 + TypeScript/React | Când un zbor e anulat, găsește rute alternative (Dijkstra dependent de timp), aplică priorități și decide vouchere. Consolă operațională + vizualizare pasager. | site: http://localhost:8080 · motor: http://localhost:8081 |
 
 Fiecare modul rulează independent; le poți descărca și porni separat.
 
